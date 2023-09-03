@@ -1,9 +1,10 @@
-import ToDoPage from './pages/ToDoPage';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import router from './routes/routes';
 import './styles/App.css';
 
 function App() {
   return (
-    <ToDoPage />
+    <RouterProvider router={createBrowserRouter(router)} />
   );
 }
 
