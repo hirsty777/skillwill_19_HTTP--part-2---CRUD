@@ -10,7 +10,7 @@ const ToDoForm = ({toDoNameProp, firstNameProp, lastNameProp, dueDateProp, prior
     const lastNameRef = useRef()
     const dueDateRef = useRef()
     const priorityRef = useRef()
-    const {loading, sendRequest} = useRequest({urlProp, methodProp})
+    const {sendRequest} = useRequest({urlProp, methodProp})
     const navigate = useNavigate()
    
     const onSubmit = (e) => {

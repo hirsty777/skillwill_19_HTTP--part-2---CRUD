@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import Style from "../styles/MainPage.module.css"
 import Loading from "../components/Loading"
-
+import Error from "../components/Error"
 
 const MainPage = () => {
     const [wasDeleted, setWasDeleted] = useState(false)
@@ -16,6 +16,7 @@ const MainPage = () => {
     }
     
     if(loading && !response)return <Loading />
+    if(error)return <Error/>
     return (
         <div className={Style.wrapper}>
             <div className={Style["todo-wrapper"]}>
