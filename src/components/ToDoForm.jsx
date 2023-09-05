@@ -54,7 +54,7 @@ const ToDoForm = ({toDoNameProp, firstNameProp, lastNameProp, dueDateProp, prior
                     <select name="priority selector" className={Style["priority-select"]} ref={priorityRef} id="priority" defaultValue={priorityProp} >
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
-                        <option value="H    ight">Hight</option>
+                        <option value="Hight">High</option>
                     </select>
                 </div>
                 <button className={Style["add-btn"]}>
